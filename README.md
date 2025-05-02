@@ -7,7 +7,8 @@
 
 A professional Streamlit application that generates Python code from natural language descriptions using a fine-tuned SmolLM language model. This application demonstrates advanced model deployment techniques and proper software engineering practices for AI-based code generation tools.
 
-![App Screenshot](https://github.com/user-attachments/assets/636f78bd-fe8d-4547-9bc5-dfe157af3f0a)
+![App Screenshot](https://github.com/user-attachments/assets/83f08bad-0594-49fd-99ed-47a7e5ebbfe0)
+
 
 ## 🌟 Features
 
