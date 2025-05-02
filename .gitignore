@@ -1,0 +1,13 @@
+.vscode
+.ipynb_checkpoints
+.env
+.DS_Store
+.venv
+.env.local
+
+smollm-sft-lora-output/* 
+smollm-sft-output/* 
+wandb/* 
+data/* 
+
+run.ipynb 
