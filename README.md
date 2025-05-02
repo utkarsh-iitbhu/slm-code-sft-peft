@@ -1,9 +1,10 @@
 # Python Code Generator with SmolLM
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.45+-red.svg)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-yellow.svg)
 ![SmolLM](https://img.shields.io/badge/SmolLM-140-brightgreen.svg)
+![uv](https://img.shields.io/badge/uv-package_manager-purple.svg)
 
 A professional Streamlit application that generates Python code from natural language descriptions using a fine-tuned SmolLM language model. This application demonstrates advanced model deployment techniques and proper software engineering practices for AI-based code generation tools.
 
@@ -71,8 +72,8 @@ print(result[0]['generated_text'])
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- pip (Python package manager)
+- Python 3.10 or higher
+- [uv](https://docs.astral.sh/uv/) - Fast Python package installer and environment manager
 
 ### Installation
 
@@ -82,19 +83,27 @@ git clone https://github.com/utkarsh-iitbhu/slm-code-sft-peft.git
 cd slm-code-sft-peft
 ```
 
-2. Create and activate a virtual environment:
+2. Install uv (if not already installed):
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+# On macOS with Homebrew
+brew install uv
+
+# On macOS and Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# On Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-3. Install dependencies:
+3. Set up the environment and install dependencies:
 ```bash
-pip install -r requirements.txt
+# Use uv to sync the project dependencies from pyproject.toml and uv.lock
+uv sync
 ```
 
 4. Run the application:
 ```bash
+# Using the activated environment
 streamlit run app.py
 ```
 
@@ -206,3 +215,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - HuggingFace for the SmolLM base model
 - Streamlit team for the amazing framework
 - CodeSearchNet for the training data
+- [Astral](https://astral.sh/) for the uv package manager
