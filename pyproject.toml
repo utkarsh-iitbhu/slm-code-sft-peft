@@ -1,7 +1,7 @@
 [project]
 name = "slm-code-finetune"
-version = "0.1.0"
-description = "Add your description here"
+version = "1.1.0"
+description = "Generate Python code from natural language descriptions using slm"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
