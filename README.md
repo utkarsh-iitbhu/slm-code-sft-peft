@@ -97,13 +97,11 @@ powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 
 3. Set up the environment and install dependencies:
 ```bash
-# Use uv to sync the project dependencies from pyproject.toml and uv.lock
 uv sync
 ```
 
 4. Run the application:
 ```bash
-# Using the activated environment
 streamlit run app.py
 ```
 
